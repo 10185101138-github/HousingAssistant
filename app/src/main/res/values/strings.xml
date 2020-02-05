@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HousingAssistant2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="ClickTest">点我点我~</string>
+    <string name="title_clothing">衣</string>
+    <string name="title_food">食</string>
+    <string name="title_shelter">住</string>
+    <string name="title_transportation">行</string>
+    <string name="title_weather">天气</string>
+</resources>
