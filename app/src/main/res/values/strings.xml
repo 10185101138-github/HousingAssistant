@@ -9,4 +9,6 @@
     <string name="title_shelter">住</string>
     <string name="title_transportation">行</string>
     <string name="title_weather">天气</string>
+    <string name="DeviceChoose">选择设备</string>
+    <string name="dev_ac">空调</string>
 </resources>
