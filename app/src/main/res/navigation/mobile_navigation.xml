@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_shelter">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_shelter"
         android:name="com.aresix.housingassistant2.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:label="@string/title_shelter"
+        tools:layout="@layout/fragment_shelter" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_food"
         android:name="com.aresix.housingassistant2.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:label="@string/title_food"
+        tools:layout="@layout/fragment_food" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_transportation"
         android:name="com.aresix.housingassistant2.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:label="@string/title_transportation"
+        tools:layout="@layout/fragment_transportation" />
+
+    <fragment
+        android:id="@+id/navigation_clothing"
+        android:name="com.aresix.housingassistant2.ui.notifications.NotificationsFragment"
+        android:label="@string/title_clothing"
+        tools:layout="@layout/fragment_clothing" />
 </navigation>
