@@ -21,7 +21,7 @@ public class FoodFragment extends Fragment {
     private FoodViewModel mViewModel;
     private AdapterViewFlipper mFlipper=null;
     private int[] mFlipPic={
-            R.drawable.test01,R.drawable.test02,R.drawable.test03,
+            R.drawable.test02,R.drawable.test01,R.drawable.test03,
             R.drawable.test04,R.drawable.test05
     };
 
