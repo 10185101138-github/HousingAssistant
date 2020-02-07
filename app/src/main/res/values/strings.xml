@@ -11,4 +11,10 @@
     <string name="title_weather">天气</string>
     <string name="DeviceChoose">选择设备</string>
     <string name="dev_ac">空调</string>
+    <string name="Air_condition">空调</string>
+    <string name="TV">电视</string>
+    <string name="player">音响</string>
+    <string name="Curtain">窗帘</string>
+    <string name="Illumination">照明</string>
+    <string name="AddDevice">添加设备</string>
 </resources>

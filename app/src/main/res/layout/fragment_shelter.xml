@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ColorLightGrey"
-    android:gravity="center">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/deviceTitle"
@@ -15,11 +15,190 @@
         android:textSize="36sp"
         android:textStyle="bold" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/devices"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="412dp"
         android:layout_below="@id/deviceTitle"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="40dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="135dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/DevAir"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/air_conditoner" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DevAir"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/Air_condition"
+                        android:textColor="@color/colorDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="135dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/DevTV"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/tv" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DevTV"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/TV"
+                        android:textColor="@color/colorDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l1"
+                android:layout_marginTop="30dp"
+                android:baselineAligned="false"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="135dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/DevPlayer"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/player" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DevPlayer"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/player"
+                        android:textColor="@color/colorDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="135dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/DevCurtain"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/curtain" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DevCurtain"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/Curtain"
+                        android:textColor="@color/colorDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l2"
+                android:layout_marginTop="30dp"
+                android:baselineAligned="false"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="135dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/DevIllumination"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/illumination" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DevIllumination"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/Illumination"
+                        android:textColor="@color/colorDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="135dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/DevAdd"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/add_dev" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DevAdd"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/AddDevice"
+                        android:textColor="@color/colorDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
