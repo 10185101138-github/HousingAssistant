@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.aresix.housingassistant2.ui.food.FoodFragment;
+
 public class MyFlipperAdapter extends BaseAdapter {
 
     private Context mContext = null;
@@ -36,10 +38,10 @@ public class MyFlipperAdapter extends BaseAdapter {
         ImageView imageView = null;
         if (view == null) {
             imageView = new ImageView(mContext);
-            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setLayoutParams(new ViewGroup
                     .LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                    ViewGroup.LayoutParams.MATCH_PARENT));
+                    ViewGroup.LayoutParams.WRAP_CONTENT));
             view = imageView;
         }else {
             imageView= (ImageView) view;

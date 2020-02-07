@@ -11,12 +11,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterViewFlipper;
 
 import com.aresix.housingassistant2.R;
+import com.aresix.housingassistant2.adapter.MyFlipperAdapter;
 
 public class FoodFragment extends Fragment {
 
     private FoodViewModel mViewModel;
+    private AdapterViewFlipper mFlipper=null;
     private int[] mFlipPic={
             R.drawable.test01,R.drawable.test02,R.drawable.test03,
             R.drawable.test04,R.drawable.test05
@@ -29,7 +32,14 @@ public class FoodFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_food, container, false);
+        View view=inflater.inflate(R.layout.fragment_food, container, false);
+        mFlipper=view.findViewById(R.id.flipper);
+
+        MyFlipperAdapter adapter = new MyFlipperAdapter(getContext(),mFlipPic);
+        mFlipper.setAdapter(adapter);
+
+
+        return view;
     }
 
     @Override
