@@ -13,7 +13,7 @@
 <!--    android:name="com.aresix.housingassistant2.ui.home.HomeFragment"-->
     <fragment
         android:id="@+id/navigation_food"
-        android:name="com.aresix.housingassistant2.ui.dashboard.DashboardFragment"
+        android:name="com.aresix.housingassistant2.ui.food.FoodFragment"
         android:label="@string/title_food"
         tools:layout="@layout/fragment_food" />
 
