@@ -72,7 +72,7 @@ public class FoodFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 pots[mFlipper.getDisplayedChild()].setImageResource(R.drawable.pot1);
-                //获取当前播放的图片是第几站图片 下标从 0 开始
+                //获取当前播放的图片是 第几站图片 下标从 0 开始
                 mFlipper.showPrevious();
                 pots[mFlipper.getDisplayedChild()].setImageResource(R.drawable.pot0);
             }
