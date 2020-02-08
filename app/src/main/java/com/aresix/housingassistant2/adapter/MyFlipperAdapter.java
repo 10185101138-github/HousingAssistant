@@ -2,12 +2,14 @@ package com.aresix.housingassistant2.adapter;
 
 import android.content.Context;
 import android.util.Log;
-import android.view.GestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.aresix.housingassistant2.MainActivity;
 import com.aresix.housingassistant2.R;
 import com.aresix.housingassistant2.ui.food.FoodFragment;
 
@@ -17,12 +19,15 @@ public class MyFlipperAdapter extends BaseAdapter {
     private Context mContext = null;
     private int[] Drawables = null;
     private ImageView[] mPots={null,null,null,null,null};
+    private Button mBtnL,mBtnR;
 
-    public MyFlipperAdapter(Context context, int[] drawables,ImageView[] pots) {
+    public MyFlipperAdapter(Context context, int[] drawables, ImageView[] pots, Button l,Button r) {
         mContext = context;
         Drawables = drawables;
         int len = mPots.length;
         System.arraycopy(pots, 0, mPots, 0, len);
+        mBtnL=l;
+        mBtnR=r;
     }
 
     @Override
@@ -53,6 +58,12 @@ public class MyFlipperAdapter extends BaseAdapter {
         }else {
             imageView= (ImageView) view;
         }
+//        mBtnL.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(mContext,"上一张图片",Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         int len=mPots.length;
         try{

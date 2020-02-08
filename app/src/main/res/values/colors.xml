@@ -6,4 +6,5 @@
     <color name="colorWwx">#D0721111</color>
     <color name="colorDark">#000</color>
     <color name="ColorLightGrey">#E7ECF0</color>
+    <color name="ColorTransparentGrey">#28AF9FBD</color>
 </resources>
