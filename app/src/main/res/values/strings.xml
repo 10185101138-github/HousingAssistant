@@ -17,4 +17,14 @@
     <string name="Curtain">窗帘</string>
     <string name="Illumination">照明</string>
     <string name="AddDevice">添加设备</string>
+    <string name="intake">饮食</string>
+    <string name="totalRecord">全记录</string>
+    <string name="mine">我的</string>
+    <string name="collection">收藏</string>
+    <string name="recommend">为你推荐</string>
+    <string name="lzysFamousDishes">隔离在家也能做，方便美味又营养：蓝莓山药泥</string>
+    <string name="loveProducer">这个冬天最好吃的乙女游戏：恋与制作人</string>
+    <string name="psycho">直男一定要知道的哄女朋友技巧</string>
+    <string name="souvenir">Souvenir的经营之道：厨房小技巧50则</string>
+    <string name="license">考科目二之前的早饭怎么吃：全家</string>
 </resources>
