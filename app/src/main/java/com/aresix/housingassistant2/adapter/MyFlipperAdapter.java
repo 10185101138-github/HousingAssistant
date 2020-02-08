@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.aresix.housingassistant2.R;
 import com.aresix.housingassistant2.ui.food.FoodFragment;
 
 public class MyFlipperAdapter extends BaseAdapter {
@@ -14,10 +15,13 @@ public class MyFlipperAdapter extends BaseAdapter {
     private static final String TAG = "Aressssssssss";
     private Context mContext = null;
     private int[] Drawables = null;
+    private ImageView[] mPots={null,null,null,null,null};
 
-    public MyFlipperAdapter(Context context, int[] drawables) {
+    public MyFlipperAdapter(Context context, int[] drawables,ImageView[] pots) {
         mContext = context;
         Drawables = drawables;
+        int len = mPots.length;
+        System.arraycopy(pots, 0, mPots, 0, len);
     }
 
     @Override
@@ -43,15 +47,24 @@ public class MyFlipperAdapter extends BaseAdapter {
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             imageView.setLayoutParams(new ViewGroup
                     .LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                    500));
+                    500)); //这里单位不是dp
             view = imageView;
-            Log.d(TAG, "getView: 这时i = "+i);
         }else {
             imageView= (ImageView) view;
-            Log.d(TAG, "else: 这时i = "+i);
+        }
+
+        int len=mPots.length;
+        try{
+            int prev=(i+len-1)%len;
+            mPots[prev].setImageResource(R.drawable.pot1);
+            mPots[i].setImageResource(R.drawable.pot0);
+        }catch (Exception e){
+            Log.d(TAG, "getView: 进度条出错啦");
+            Log.e(TAG, "getView: ????",e );
         }
 
         imageView.setImageResource(Drawables[i]);
         return imageView;
     }
+
 }
