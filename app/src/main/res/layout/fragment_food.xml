@@ -105,75 +105,67 @@
         android:paddingEnd="15dp"
         android:layout_below="@id/pots"
         android:layout_marginTop="5dp">
+
         <RelativeLayout
             android:id="@+id/leftFood"
             android:layout_width="170dp"
             android:layout_height="144dp"
             android:layout_weight="1">
+
             <ImageView
                 android:layout_width="170dp"
                 android:layout_height="144dp"
-                android:src="@drawable/border02"/>
+                android:src="@drawable/border0201" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/intake"
-                android:textStyle="bold"
-                android:textSize="36sp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginStart="8dp"/>
+                android:text="@string/intake"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/totalRecord"
-                android:textSize="24sp"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="36dp"
-                android:textStyle="bold"/>
-            <ImageView
-                android:layout_width="84dp"
-                android:layout_height="97dp"
-                android:src="@drawable/red02"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="18dp"
-                android:layout_marginBottom="2dp"/>
+                android:text="@string/totalRecord"
+                android:textSize="24sp"
+                android:textStyle="bold" />
         </RelativeLayout>
+
         <RelativeLayout
             android:id="@+id/rightFood"
             android:layout_width="170dp"
             android:layout_height="144dp"
             android:layout_weight="1">
+
             <ImageView
                 android:layout_width="170dp"
                 android:layout_height="144dp"
-                android:src="@drawable/border02"/>
+                android:src="@drawable/border0202" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mine"
-                android:textStyle="bold"
-                android:textSize="36sp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginStart="8dp"/>
+                android:text="@string/mine"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/collection"
-                android:textSize="24sp"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="36dp"
-                android:textStyle="bold"/>
-            <ImageView
-                android:layout_width="86dp"
-                android:layout_height="89dp"
-                android:src="@drawable/star02"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="3dp"/>
+                android:text="@string/collection"
+                android:textSize="24sp"
+                android:textStyle="bold" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -217,7 +209,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/background02" />
 
@@ -250,7 +242,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/background02" />
 
@@ -283,7 +275,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/background02" />
 
@@ -315,7 +307,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/background02" />
 
@@ -348,7 +340,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/background02" />
 
@@ -374,4 +366,49 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/foodCard"
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:background="@drawable/background0202"
+        android:padding="35dp">
+
+        <TextView
+            android:id="@+id/cardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_toStartOf="@id/close"
+            android:textColor="@color/colorDark"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/lzysFamousDishes"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardTitle">
+
+            <TextView
+                android:id="@+id/cardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/lzysFamousDishesContent"
+                android:lineSpacingExtra="3dp"/>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/close" />
+
+    </RelativeLayout>
 </RelativeLayout>
