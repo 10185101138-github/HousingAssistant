@@ -98,4 +98,14 @@
         \t\t\t\t有我在身边时可以放心闭上眼睛。
     </string>
     <string name="licenseContent">嵬漪马上就会过科目三的！</string>
+    <string name="currentLocation">xx市xx区</string>
+    <string name="temperature">8</string>
+    <string name="DegreeCentigrade">℃</string>
+    <string name="todayWeather">10℃ / 5℃</string>
+    <string name="pollution">轻度污染</string>
+    <string name="bodyTemperature">体感：8℃</string>
+    <string name="wind">西北风</string>
+    <string name="humidity">湿度：66%</string>
+    <string name="clothRecommend">穿衣推荐</string>
+    <string name="moreRecommend"><u>更多单品推荐</u></string>
 </resources>

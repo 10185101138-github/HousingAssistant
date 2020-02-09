@@ -101,8 +101,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:paddingStart="25dp"
-        android:paddingEnd="15dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:layout_below="@id/pots"
         android:layout_marginTop="5dp">
 
@@ -110,7 +110,8 @@
             android:id="@+id/leftFood"
             android:layout_width="170dp"
             android:layout_height="144dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:gravity="center">
 
             <ImageView
                 android:layout_width="170dp"
@@ -141,7 +142,8 @@
             android:id="@+id/rightFood"
             android:layout_width="170dp"
             android:layout_height="144dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:gravity="center">
 
             <ImageView
                 android:layout_width="170dp"
@@ -170,7 +172,7 @@
     </LinearLayout>
 
     <View
-        android:id="@+id/splitLine"
+        android:id="@+id/splitLineFood"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_below="@id/foodItem02"
@@ -183,7 +185,7 @@
         android:id="@+id/recommend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/splitLine"
+        android:layout_below="@id/splitLineFood"
         android:layout_marginStart="24dp"
         android:text="@string/recommend"
         android:textSize="18sp"

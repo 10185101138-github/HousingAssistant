@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/navigation_clothing"
-        android:name="com.aresix.housingassistant2.ui.notifications.NotificationsFragment"
+        android:name="com.aresix.housingassistant2.ui.clothing.ClothingFragment"
         android:label="@string/title_clothing"
         tools:layout="@layout/fragment_clothing" />
 </navigation>
