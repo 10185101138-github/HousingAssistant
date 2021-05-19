@@ -20,9 +20,13 @@ public class NotificationsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        /** 创建ViewModel **/
         notificationsViewModel =
                 ViewModelProviders.of(this).get(NotificationsViewModel.class);
+
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
+
+        /** 设置TextView **/
         final TextView textView = root.findViewById(R.id.text_notifications);
         notificationsViewModel.getText().observe(this, new Observer<String>() {
             @Override

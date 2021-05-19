@@ -108,4 +108,134 @@
     <string name="humidity">湿度：66%</string>
     <string name="clothRecommend">穿衣推荐</string>
     <string name="moreRecommend"><u>更多单品推荐</u></string>
+
+
+    <string name="setting_adult">成人模式</string>
+    <string name="setting_children">儿童模式</string>
+    <string name="title_setting">设置</string>
+    <string name="title_outdoors">室外运动</string>
+    <string name="title_user_name">用户名</string>
+    <string name="title_user_password">密码</string>
+    <string name="title_confirm_password">确认密码</string>
+    <string name="title_sign_in">SIGN IN</string>
+    <string name="title_sign_up">SIGN UP</string>
+    <string name="user_name">Aresix</string>
+    <string name="password">zuiaxiaozhan</string>
+<!--儿童模式-->
+    <string name="title_children_activity">活动</string>
+    <string name="title_children_record">体形记录</string>
+<!--    饮食模式-->
+    <string name="children_food_card1">南瓜小米粥</string>
+    <string name="children_food_card1_content">\t\t南瓜和小米都是营养丰富的食材，南瓜有清
+        热解毒的功效，小米补中益气，两相结合价值更高。而且南瓜小米粥也不需要放什么调味料
+        ，南瓜本身带点甜味，宝宝也爱吃。\n
+　　 【适宜人群】\n
+　　 10个月以上的宝宝\n
+　　 【食材】\n
+　　 \t\t小米1碗，南瓜40克\n
+　　 \t\t【步骤】\n
+　　 \t\t1、将南瓜去皮去籽，切成小块。\n
+　　 \t\t2、将小米淘洗干净，放入清水中浸泡约1个小时。\n
+　　 \t\t3、取一口小锅，放入小米和适量的清水，煮成小米粥。\n
+　　 \t\t4、然后放入南瓜块，大火煮开之后，换成小火，直到将食材熬煮到软烂。\n
+　　 \t\t5、将煮好的南瓜小米粥盛入碗内即可。\n
+</string>
+    <string name="children_food_card2">青椒胡萝卜山药泥</string>
+    <string name="children_food_card2_content">\t\t食材：山药、胡萝卜、青椒、色拉油、食盐、香油。\n
+        \t\t做法：将胡萝卜和青椒洗干净切成末。在锅中倒点油，将它们炒至断生。等山药冷却后，压成泥。将压
+        好的山药泥倒入碗中，加入炒好的青椒胡萝卜，加入盐，将所有食物抓匀。准备好果冻模，在内壁涂上一层
+        香油，然后填入混合山药泥，用勺子压紧。再倒扣在盘中，即可开吃。\n
+</string>
+    <string name="children_food_card3">什锦小米粥</string>
+    <string name="children_food_card3_content">\t\t什锦粥可以添加很多食材，这道什锦小米粥里放
+        的是花生、玉米和胡萝卜。玉米和胡萝卜中含有大量的胡萝卜素，可以转化为宝宝身体发育所需要的
+        维生素A，而花生含钙量丰富，有助于促进宝宝骨骼发育，这三样东西放在一起营养互补。玉米粒和花
+        生不适合婴儿吞咽，妈妈们需要多注意，尽量将食材煮得软烂。\n
+　　 \t\t【适宜人群】\n
+　　 \t\t2岁以上的宝宝\n
+　　 \t\t【食材】\n
+　　 \t\t花生20颗、玉米1/3段、胡萝卜1/3根、大米1汤匙、小米2汤匙、水1600毫升\n
+　　 \t\t【步骤】\n
+　　 \t\t1、将花生、大米和小米分别放入碗中浸泡一个晚上。\n
+　　 \t\t2、胡萝卜削皮切丁，玉米取玉米粒。\n
+　　 \t\t3、将花生、玉米粒、胡萝卜丁和米放入锅中。\n
+　　 \t\t4、往锅中倒入适量的清水，将食材熬煮到软烂熟透即可。\n
+</string>
+<!--    居家模式-->
+    <string name="speaker">音响</string>
+    <string name="lighting">照明</string>
+    <string name="curtain">窗帘</string>
+    <string name="add_new_devices">添加设备</string>
+<!--    活动模式-室内-->
+    <string name="indoors_card1">美工</string>
+    <string name="indoors_card1_content">在做美工的时候，很多家长都会提供范例，
+        让孩子做一个一模一样的作品，而孩子往往对此并不感兴趣。这是因为，你准备的
+        材料规定了玩法，给孩子的发展空间很小，在某种程度上限制了孩子自由想象和发
+        挥。不如为孩子提供材料，让孩子自己创作！</string>
+    <string name="indoors_card2">角色扮演（过家家）</string>
+    <string name="indoors_card2_content">家长可以给宝宝提供一些娃娃、玩具锅碗
+        瓢盆等进行过家家游戏。当然，家长也把不要的小瓶子等物品给孩子玩过家家，这
+        样不仅经济实用，也让宝宝积累不同物品用法的经验。</string>
+    <string name="indoors_card3">积木</string>
+    <string name="indoors_card3_content">积木的种类多种多样。积木（清水积木、
+        乐高等）、积塑（雪花片）、橡皮泥、沙水等材料都可以让幼儿在创造的时候发展
+        空间知觉能力和象征能力。通过幼儿的构造操作，将无意义的结构原件转化为有形
+        象意义的整体，在这个过程中还可以看见幼儿搭建水平的发展变化。要注意，宝宝
+        想搭什么就搭什么，千万不要强行规定建构内容哦！</string>
+    <string name="indoors_card4">数学</string>
+    <string name="indoors_card4_content">家长可以常常让孩子数一数身边的人和物，
+        比如家里来了几个人，需要多少碗筷等，让幼儿建立基数的概念。此外，还可以和
+        幼儿聊天气和时间，让幼儿知道数字还可以是作为共享的衡量标准——参照数。在与
+        幼儿进行交流的时候，也可以让孩子将积木排列起来，一边排列一边说某某物品放
+        在第几个，从而建立序数的概念。</string>
+    <string name="indoors_card5">运动</string>
+    <string name="indoors_card5_content">下雨天或者天气不好的时候，可以在家里设
+        置一些小障碍物，让宝宝进行玩耍、运动，具有一定的挑战性也可以增加趣味性。</string>
+<!--    活动模式-室外-->
+    <string name="outdoors_card1">玩泥巴</string>
+    <string name="outdoors_card1_content">很多家长会认为，玩泥巴是很脏的行为，会
+        阻止孩子玩。但是，泥土是一种天然的创造元素，可以让幼儿充分发挥想象力，塑造出
+        各种艺术品。家长需要为幼儿做好防护，在保证安全和清洁的条件下，最大程度鼓励幼
+        儿探索自然</string>
+    <string name="outdoors_card2">跳袋子</string>
+    <string name="outdoors_card2_content">找个米袋之类的大袋子，清理干净后让宝宝
+        站进去，跳着走路，可以很好地发展宝宝的大肌肉哦</string>
+    <string name="outdoors_card3">跳圈圈</string>
+    <string name="outdoors_card3_content">这和跳房子类似，在蹦蹦跳跳的同时，发展身
+        体的平衡能力</string>
+<!--    体型记录模式-->
+    <string name="children_record_text1">身高体重参考表</string>
+    <string name="children_record_height_weight_reference">
+        \t\t 3~4岁身高和体重参考标准\n
+        \t\t\t\t 男孩：94.9-111.7cm 12.7-21.2kg\n
+        \t\t\t\t 女孩：94.1-111.3cm 12.3-21.5kg\n\n
+        \t\t 4~5岁身高和体重参考标准\n
+        \t\t\t\t 男孩：100.7-119.2cm 14.1-24.2kg\n
+        \t\t\t\t 女孩：99.9-118.9cm  13.7-24.9kg\n\n
+        \t\t 5~6岁身高和体重参考标准\n
+        \t\t\t\t 男孩：106.1-125.8cm 15.9-27.1kg\n
+        \t\t\t\t 女孩：104.9-125.4cm 15.3-27.8kg\n\n
+    </string>
+    <string name="children_record_text2">活动技能参考表</string>
+    <string name="children_record_activity_skill_reference">
+        \t\t 3~4岁活动技能参考\n
+        \t\t\t\t 1.能沿地面直线或在于较窄的低矮物体上走一段距离。\n
+        \t\t\t\t 2.能双脚灵活交替上下楼梯。\n
+        \t\t\t\t 3.能身体平稳地双脚连续向前跳。\n
+        \t\t\t\t 4.分散跑时能躲避他人的碰撞。\n
+        \t\t\t\t 5.能双手向上抛球。\n\n
+        \t\t 4~5岁活动技能参考\n
+        \t\t\t\t 1.能在较窄的低矮物体上平稳地走一段距离。\n
+        \t\t\t\t 2.能以匍匐、膝盖悬空等多种方式钻爬。\n
+        \t\t\t\t 3.能助跑跨跳过一定距离，或助跑跨跳过一定高度的物体。\n
+        \t\t\t\t 4.能与他人玩追逐、躲闪跑的游戏。\n
+        \t\t\t\t 5.能连续自抛自接球。\n\n
+        \t\t 5~6岁活动技能参考\n
+        \t\t\t\t 能在斜坡、荡桥和有一定间隔的物体上较平稳地行走。\n
+        \t\t\t\t 能以手脚并用的方式安全地爬攀登架、网等。\n
+        \t\t\t\t 能连续跳绳。\n
+        \t\t\t\t 能躲避他人滚过来的球或扔过来的沙包。\n
+        \t\t\t\t 能连续拍球。\n
+    </string>
+
 </resources>

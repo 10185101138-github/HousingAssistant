@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:scaleX="1.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/login_welcome" />
+
+    <com.aresix.housingassistant2.utils.RoundImageView
+        android:id="@+id/roundImageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="252dp"
+        android:src="@drawable/avatar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sign_in_user_name"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_input"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/title_user_name"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundImageView2" />
+
+    <EditText
+        android:id="@+id/sign_in_user_password"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_input"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:text="@string/title_user_password"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_user_name" />
+
+    <Button
+        android:id="@+id/sign_in_signInButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_sign_in_button"
+        android:text="@string/title_sign_in"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_user_password" />
+
+    <Button
+        android:id="@+id/sign_in_signUpButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_sign_up_button"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:text="@string/title_sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toEndOf="@+id/sign_in_signInButton"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_user_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

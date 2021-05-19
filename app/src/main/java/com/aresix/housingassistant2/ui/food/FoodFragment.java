@@ -2,23 +2,18 @@ package com.aresix.housingassistant2.ui.food;
 
 import androidx.lifecycle.ViewModelProviders;
 
-import android.gesture.GestureOverlayView;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
-import android.view.GestureDetector;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterViewFlipper;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +21,7 @@ import android.widget.Toast;
 import com.aresix.housingassistant2.R;
 import com.aresix.housingassistant2.adapter.MyFlipperAdapter;
 
+/** 饮食模式 **/
 public class FoodFragment extends Fragment {
 
     private FoodViewModel mViewModel;

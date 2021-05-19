@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/children_mobile_navigation"
+    app:startDestination="@+id/children_navigation_shelter">
+
+<!--    儿童居家模式 -->
+    <fragment
+        android:id="@+id/children_navigation_shelter"
+        android:name="com.aresix.housingassistant2.ui.children_shelter.ChildrenShelterFragment"
+        android:label="@string/title_shelter"
+        tools:layout="@layout/fragment_children_shelter" />
+
+<!--    儿童饮食模式 -->
+    <fragment
+        android:id="@+id/children_navigation_food"
+        android:name="com.aresix.housingassistant2.ui.children_food.ChildrenFoodFragment"
+        android:label="@string/title_food"
+        tools:layout="@layout/fragment_children_food" />
+
+<!--    儿童活动模式 -->
+    <fragment
+        android:id="@+id/children_navigation_activity"
+        android:name="com.aresix.housingassistant2.ui.children_activity.ChildrenActivityFragment"
+        android:label="@string/title_children_activity"
+        tools:layout="@layout/fragment_children_activity" />
+
+<!--    儿童体型记录模式 -->
+    <fragment
+        android:id="@+id/children_navigation_record"
+        android:name="com.aresix.housingassistant2.ui.children_record.ChildrenRecordFragment"
+        android:label="@string/title_children_record"
+        tools:layout="@layout/fragment_children_record" />
+
+</navigation>

@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.aresix.housingassistant2.R;
 
+/** 穿衣模式（包括天气） **/
 public class ClothingFragment extends Fragment {
 
     private ClothingViewModel mViewModel;

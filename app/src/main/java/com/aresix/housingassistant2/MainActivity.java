@@ -10,6 +10,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+/** 成人模式主界面 **/
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_shelter, R.id.navigation_food, R.id.navigation_transportation,R.id.navigation_clothing)
+                R.id.navigation_shelter, R.id.navigation_food, R.id.navigation_setting, R.id.navigation_clothing)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
