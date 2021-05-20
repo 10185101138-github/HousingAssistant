@@ -13,7 +13,6 @@
             android:id="@+id/mainWeather"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/curLocation"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp">
 
@@ -39,14 +38,6 @@
                 android:text="@string/temperature"
                 android:textSize="100sp" />
         </RelativeLayout>
-
-        <TextView
-            android:id="@+id/curLocation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="@string/currentLocation"
-            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/todayWea"
@@ -133,7 +124,7 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/splitLineCloth"
@@ -147,7 +138,7 @@
             <ImageView
                 android:id="@+id/model"
                 android:layout_width="330dp"
-                android:layout_height="440dp"
+                android:layout_height="460dp"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/model0301" />
 
@@ -160,5 +151,5 @@
                 android:text="@string/moreRecommend"
                 android:textColor="@color/colorBlueUrl" />
         </RelativeLayout>
-    </ScrollView>
+    </RelativeLayout>
 </RelativeLayout>
