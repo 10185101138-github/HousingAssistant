@@ -12,12 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.aresix.housingassistant2.AuditMainActivity;
 import com.aresix.housingassistant2.ChildrenMainActivity;
 import com.aresix.housingassistant2.LoginActivity;
-import com.aresix.housingassistant2.MainActivity;
 import com.aresix.housingassistant2.R;
-
-import java.security.Signer;
 
 /** 登录 **/
 public class SignInFragment extends Fragment {
@@ -50,7 +48,7 @@ public class SignInFragment extends Fragment {
                         mUserName.getText().toString(), mUserPassword.getText().toString())) {
                     Intent intent = null;
                     if (activity.getMode() == 0) {
-                        intent = new Intent(activity, MainActivity.class);
+                        intent = new Intent(activity, AuditMainActivity.class);
                     } else if (activity.getMode() == 1) {
                         intent = new Intent(activity, ChildrenMainActivity.class);
                     }

@@ -25,7 +25,7 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".AuditMainActivity"
             android:label="@string/app_name" />
         <activity
             android:name=".ChildrenMainActivity"/>

@@ -2,7 +2,6 @@ package com.aresix.housingassistant2;
 
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -10,21 +9,20 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class ChildrenMainActivity extends MainActivity {
+/** 成人模式主界面 **/
+public class AuditMainActivity extends MainActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_children_main);
-        BottomNavigationView navView = findViewById(R.id.children_nav_view);
-        
+        setContentView(R.layout.activity_main);
+        BottomNavigationView navView = findViewById(R.id.nav_view);
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.children_navigation_shelter,
-                R.id.children_navigation_food,
-                R.id.children_navigation_activity,
-                R.id.children_navigation_record)
+                R.id.navigation_shelter, R.id.navigation_food, R.id.navigation_setting, R.id.navigation_clothing)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.children_nav_host_fragment);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
     }
