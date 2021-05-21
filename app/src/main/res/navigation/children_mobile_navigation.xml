@@ -33,4 +33,10 @@
         android:label="@string/title_children_record"
         tools:layout="@layout/fragment_children_record" />
 
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.aresix.housingassistant2.ui.setting.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_setting" />
+
 </navigation>

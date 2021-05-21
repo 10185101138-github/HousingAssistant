@@ -16,6 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.aresix.housingassistant2.R;
 import com.aresix.housingassistant2.ui.children_activity.indoors.IndoorsActivity;
@@ -50,9 +52,8 @@ public class ChildrenActivityFragment extends Fragment {
         mSettingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), SettingActivity.class);
-                startActivity(intent);
-                getActivity().finish();
+                NavController navigation = Navigation.findNavController(view);
+                navigation.navigate(R.id.navigation_setting);
             }
         });
 

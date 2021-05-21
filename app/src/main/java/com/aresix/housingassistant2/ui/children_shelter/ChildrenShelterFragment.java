@@ -13,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.aresix.housingassistant2.MainActivity;
 import com.aresix.housingassistant2.R;
@@ -38,9 +40,8 @@ public class ChildrenShelterFragment extends Fragment {
         mSettingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), SettingActivity.class);
-                startActivity(intent);
-                getActivity().finish();
+                NavController navigation = Navigation.findNavController(view);
+                navigation.navigate(R.id.navigation_setting);
             }
         });
 
