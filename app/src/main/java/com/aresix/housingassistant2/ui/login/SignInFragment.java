@@ -32,10 +32,8 @@ public class SignInFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_login_sign_in, container, false);
 
         mUserName = (TextView) view.findViewById(R.id.sign_in_user_name);
-        mUserName.setText("");
 
         mUserPassword = (TextView) view.findViewById(R.id.sign_in_user_password);
-        mUserPassword.setText("");
 
         /** 登录按钮 **/
         mSignIn = (Button) view.findViewById(R.id.sign_in_signInButton);

@@ -33,13 +33,10 @@ public class SignUpFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_login_sign_up, container, false);
 
         mUserName = (TextView) view.findViewById(R.id.sign_up_user_name);
-        mUserName.setText("");
 
         mUserPassword = (TextView) view.findViewById(R.id.sign_up_user_password);
-        mUserPassword.setText("");
 
         mUserConfirmPassword = (TextView) view.findViewById(R.id.sign_up_confirm_password);
-        mUserConfirmPassword.setText("");
 
         mSignIn = (Button) view.findViewById(R.id.sign_up_signInButton);
         mSignIn.setOnClickListener(new View.OnClickListener() {

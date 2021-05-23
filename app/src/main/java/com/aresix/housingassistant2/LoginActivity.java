@@ -87,11 +87,12 @@ public class LoginActivity extends AppCompatActivity {
 
     public boolean checkSignUpInfo(String mUserName, String mUserPassword, String mUserConfirmPassword) {
         Context context = getApplicationContext();
-        if ("".equals(mUserName)) {
+        if (mUserName == null || "".equals(mUserName)) {
             Toast.makeText(context, "请输入用户名", Toast.LENGTH_SHORT).show();
             return false;
         }
-        if ("".equals(mUserPassword) || "".equals(mUserConfirmPassword)) {
+        if (mUserPassword == null || "".equals(mUserPassword) ||
+                mUserConfirmPassword == null || "".equals(mUserConfirmPassword)) {
             Toast.makeText(context, "请输入密码", Toast.LENGTH_SHORT).show();
             return false;
         }
@@ -118,7 +119,7 @@ public class LoginActivity extends AppCompatActivity {
         SharedPreferences userInfo = getSharedPreferences(prefName, MODE_PRIVATE);
         String username = userInfo.getString("username", "");
         String password = userInfo.getString("password", "");
-        if ("".equals(username)) {
+        if (username == null || "".equals(username)) {
             Toast.makeText(context, "请先注册", Toast.LENGTH_SHORT).show();
             return false;
         }
