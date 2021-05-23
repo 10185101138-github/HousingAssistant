@@ -1,11 +1,13 @@
 package com.aresix.housingassistant2.ui.login;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,6 +27,9 @@ public class SignInFragment extends Fragment {
     private Button mSignIn;
     private Button mSignUp;
 
+    private ImageView mUserHead;
+
+    @SuppressLint("ResourceType")
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -66,6 +71,20 @@ public class SignInFragment extends Fragment {
                 activity.switchToSignUp();
             }
         });
+
+        LoginActivity activity = (LoginActivity) getActivity();
+        mUserHead = (ImageView) view.findViewById(R.id.roundImageView2);
+        assert activity != null;
+        Integer head = activity.getUserHead();
+        if (head == 0) {
+            mUserHead.setImageResource(R.drawable.avatar2);
+        } else if (head == 1) {
+            mUserHead.setImageResource(R.drawable.avatar3);
+        } else if (head == 2) {
+            mUserHead.setImageResource(R.drawable.avatar4);
+        } else if (head == 3) {
+            mUserHead.setImageResource(R.drawable.avatar5);
+        }
 
         return view;
     }

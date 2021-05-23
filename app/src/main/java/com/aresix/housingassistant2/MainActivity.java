@@ -3,16 +3,9 @@ package com.aresix.housingassistant2;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Bundle;
 import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         return userInfo.getString("password", "");
     }
 
+    public Integer getUserHead() {
+        SharedPreferences userInfo = getSharedPreferences(prefName, MODE_PRIVATE);
+        return userInfo.getInt("head", 0);
+    }
+
     @SuppressLint("CommitPrefEdits")
     public void saveInfo(String mUserName, String mUserPassword) {
         SharedPreferences userInfo = getSharedPreferences(prefName, MODE_PRIVATE);
@@ -59,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences userInfo = getSharedPreferences(prefName, MODE_PRIVATE);
         SharedPreferences.Editor editor = userInfo.edit();
         editor.putInt("mode", mode);
+        editor.commit();
+    }
+
+    @SuppressLint("CommitPrefEdits")
+    public void saveHead(Integer head) {
+        SharedPreferences userInfo = getSharedPreferences(prefName, MODE_PRIVATE);
+        SharedPreferences.Editor editor = userInfo.edit();
+        editor.putInt("head", head);
         editor.commit();
     }
 }

@@ -138,4 +138,9 @@ public class LoginActivity extends AppCompatActivity {
         SharedPreferences userInfo = getSharedPreferences(prefName, MODE_PRIVATE);
         return userInfo.getInt("mode", 0);
     }
+
+    public Integer getUserHead() {
+        SharedPreferences userInfo = getSharedPreferences(prefName, MODE_PRIVATE);
+        return userInfo.getInt("head", 0);
+    }
 }

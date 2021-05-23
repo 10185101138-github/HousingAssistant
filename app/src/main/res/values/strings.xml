@@ -111,6 +111,7 @@
 
     <string name="setting_adult">成人模式</string>
     <string name="setting_children">儿童模式</string>
+    <string name="setting_confirm">提交</string>
     <string name="title_setting">设置</string>
     <string name="title_outdoors">室外运动</string>
     <string name="title_user_name">用户名</string>
