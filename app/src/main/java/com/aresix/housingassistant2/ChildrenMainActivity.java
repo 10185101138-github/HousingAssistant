@@ -1,6 +1,15 @@
 package com.aresix.housingassistant2;
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.InputType;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.navigation.NavController;
@@ -11,6 +20,12 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ChildrenMainActivity extends MainActivity {
+
+    private final static String prefName = "MyInfo";
+
+    private Integer age = 0;
+    private Float height = 0f;
+    private Float weight = 0f;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
