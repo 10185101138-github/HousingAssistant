@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,6 +20,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.aresix.housingassistant2.MainActivity;
 import com.aresix.housingassistant2.R;
 import com.aresix.housingassistant2.ui.children_activity.indoors.IndoorsActivity;
 import com.aresix.housingassistant2.ui.children_activity.outdoors.OutdoorsActivity;
@@ -77,15 +79,22 @@ public class ChildrenActivityFragment extends Fragment {
             }
         });
 
-        String adcode = Weather.getAdcodeInfo();
-        Map<String, String> res = Weather.getWeatherInfo(adcode);
+        MainActivity activity = (MainActivity) getActivity();
+        assert activity != null;
+        Map<String, String> weather = activity.getWeather();
+
+        if (weather == null) {
+            Toast.makeText(activity, "数据加载中, 请重新进入该页面", Toast.LENGTH_SHORT).show();
+            return view;
+        }
         mTemperature = view.findViewById(R.id.temperature);
         mTodayWeather = view.findViewById(R.id.todayWea);
-        mTemperature.setText(res.get("temperature"));
+        mTemperature.setText(weather.get("temperature"));
         Random random = new Random();
-        int maxTemperature = Integer.parseInt(res.get("temperature")) + random.nextInt(5);
-        int minTemperature = Integer.parseInt(res.get("temperature")) - random.nextInt(5);
+        int maxTemperature = Integer.parseInt(weather.get("temperature")) + random.nextInt(5);
+        int minTemperature = Integer.parseInt(weather.get("temperature")) - random.nextInt(5);
         mTodayWeather.setText(maxTemperature + "℃ / " + minTemperature + "℃");
+
         return view;
     }
 }
