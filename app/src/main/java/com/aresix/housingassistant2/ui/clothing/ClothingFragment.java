@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +35,9 @@ public class ClothingFragment extends Fragment {
     private TextView mWind;
     private TextView mHumidity;
 
+    private ImageView mModel;
+    private ImageView mWeather;
+
     public static ClothingFragment newInstance() {
         return new ClothingFragment();
     }
@@ -59,6 +63,9 @@ public class ClothingFragment extends Fragment {
             return view;
         }
 
+        mModel = (ImageView) view.findViewById(R.id.model);
+        mWeather = (ImageView) view.findViewById(R.id.weather);
+
         Log.w("weather", weather.toString());
         mTemperature.setText(weather.get("temperature"));
         Random random = new Random();
@@ -68,6 +75,21 @@ public class ClothingFragment extends Fragment {
         mBodyTemperature.setText("体感: " + weather.get("temperature") + "℃");
         mWind.setText("风向: " + weather.get("winddirection"));
         mHumidity.setText("湿度: " + weather.get("humidity") + "%");
+
+        int temperature = Integer.parseInt(weather.get("temperature"));
+        if (temperature < 15) {
+            mModel.setImageResource(R.drawable.model0301);
+        } else {
+            mModel.setImageResource(R.drawable.model0302);
+        }
+        String w = weather.get("weather");
+        if (w.contains("晴")) {
+            mWeather.setImageResource(R.drawable.sunny);
+        } else if (w.contains("雨")) {
+            mWeather.setImageResource(R.drawable.rainy);
+        } else {
+            mWeather.setImageResource(R.drawable.windy);
+        }
 
         return view;
     }

@@ -41,6 +41,8 @@ public class ChildrenActivityFragment extends Fragment {
     private TextView mTemperature;
     private TextView mTodayWeather;
 
+    private ImageView mWeather;
+
     @SuppressLint("SetTextI18n")
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Nullable
@@ -79,6 +81,8 @@ public class ChildrenActivityFragment extends Fragment {
             }
         });
 
+        mWeather = (ImageView) view.findViewById(R.id.children_weather);
+
         MainActivity activity = (MainActivity) getActivity();
         assert activity != null;
         Map<String, String> weather = activity.getWeather();
@@ -95,6 +99,14 @@ public class ChildrenActivityFragment extends Fragment {
         int minTemperature = Integer.parseInt(weather.get("temperature")) - random.nextInt(5);
         mTodayWeather.setText(maxTemperature + "℃ / " + minTemperature + "℃");
 
+        String w = weather.get("weather");
+        if (w.contains("晴")) {
+            mWeather.setImageResource(R.drawable.sunny);
+        } else if (w.contains("雨")) {
+            mWeather.setImageResource(R.drawable.rainy);
+        } else {
+            mWeather.setImageResource(R.drawable.windy);
+        }
         return view;
     }
 }
