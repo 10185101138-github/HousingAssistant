@@ -2,7 +2,6 @@ package com.aresix.housingassistant2.ui.children_activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -24,8 +23,6 @@ import com.aresix.housingassistant2.MainActivity;
 import com.aresix.housingassistant2.R;
 import com.aresix.housingassistant2.ui.children_activity.indoors.IndoorsActivity;
 import com.aresix.housingassistant2.ui.children_activity.outdoors.OutdoorsActivity;
-import com.aresix.housingassistant2.ui.setting.SettingActivity;
-import com.aresix.housingassistant2.utils.Weather;
 
 import java.util.Map;
 import java.util.Random;
@@ -40,6 +37,7 @@ public class ChildrenActivityFragment extends Fragment {
 
     private TextView mTemperature;
     private TextView mTodayWeather;
+    private TextView mMessage;
 
     private ImageView mWeather;
 
@@ -82,6 +80,7 @@ public class ChildrenActivityFragment extends Fragment {
         });
 
         mWeather = (ImageView) view.findViewById(R.id.children_weather);
+        mMessage = (TextView) view.findViewById(R.id.textView);
 
         MainActivity activity = (MainActivity) getActivity();
         assert activity != null;
@@ -102,10 +101,14 @@ public class ChildrenActivityFragment extends Fragment {
         String w = weather.get("weather");
         if (w.contains("晴")) {
             mWeather.setImageResource(R.drawable.sunny);
-        } else if (w.contains("雨")) {
-            mWeather.setImageResource(R.drawable.rainy);
+            mMessage.setText("今天是个好天气，快出门运动吧！");
         } else {
-            mWeather.setImageResource(R.drawable.windy);
+            mMessage.setText("今天天气不太好，进行室内活动吧！");
+            if (w.contains("雨")) {
+                mWeather.setImageResource(R.drawable.rainy);
+            } else {
+                mWeather.setImageResource(R.drawable.windy);
+            }
         }
         return view;
     }
