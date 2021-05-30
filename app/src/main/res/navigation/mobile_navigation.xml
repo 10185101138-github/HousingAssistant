@@ -10,7 +10,7 @@
         android:name="com.aresix.housingassistant2.ui.shelter.ShelterFragment"
         android:label="@string/title_shelter"
         tools:layout="@layout/fragment_shelter" />
-<!--    android:name="com.aresix.housingassistant2.ui.home.HomeFragment"-->
+
     <fragment
         android:id="@+id/navigation_food"
         android:name="com.aresix.housingassistant2.ui.food.FoodFragment"
@@ -18,14 +18,14 @@
         tools:layout="@layout/fragment_food" />
 
     <fragment
-        android:id="@+id/navigation_transportation"
-        android:name="com.aresix.housingassistant2.ui.notifications.NotificationsFragment"
-        android:label="@string/title_transportation"
-        tools:layout="@layout/fragment_transportation" />
+        android:id="@+id/navigation_setting"
+        android:name="com.aresix.housingassistant2.ui.setting.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_setting" />
 
     <fragment
         android:id="@+id/navigation_clothing"
-        android:name="com.aresix.housingassistant2.ui.notifications.NotificationsFragment"
+        android:name="com.aresix.housingassistant2.ui.clothing.ClothingFragment"
         android:label="@string/title_clothing"
         tools:layout="@layout/fragment_clothing" />
 </navigation>

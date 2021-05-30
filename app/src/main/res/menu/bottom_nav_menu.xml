@@ -15,9 +15,9 @@
     <!--    android:title="@string/title_notifications"-->
 
     <item
-        android:id="@+id/navigation_transportation"
-        android:icon="@drawable/ic_transportation"
-        android:title="@string/title_transportation" />
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/illumination"
+        android:title="@string/title_setting" />
 
     <item
         android:id="@+id/navigation_clothing"

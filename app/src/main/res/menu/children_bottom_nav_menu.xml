@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/children_navigation_shelter"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_shelter" />
+
+    <item
+        android:id="@+id/children_navigation_food"
+        android:icon="@drawable/ic_food"
+        android:title="@string/title_food" />
+
+    <item
+        android:id="@+id/children_navigation_activity"
+        android:icon="@drawable/curtain"
+        android:title="@string/title_children_activity" />
+
+    <item
+        android:id="@+id/children_navigation_record"
+        android:icon="@drawable/star02"
+        android:title="@string/title_children_record" />
+
+</menu>

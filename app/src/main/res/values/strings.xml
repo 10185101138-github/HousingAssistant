@@ -17,4 +17,225 @@
     <string name="Curtain">窗帘</string>
     <string name="Illumination">照明</string>
     <string name="AddDevice">添加设备</string>
+    <string name="intake">饮食</string>
+    <string name="totalRecord">全记录</string>
+    <string name="mine">我的</string>
+    <string name="collection">收藏</string>
+    <string name="recommend">为你推荐</string>
+    <string name="lzysFamousDishes">隔离在家也能做，方便美味又营养：蓝莓山药泥</string>
+    <string name="loveProducer">这个冬天最好吃的乙女游戏：恋与制作人</string>
+    <string name="psycho">直男一定要知道的哄女朋友技巧</string>
+    <string name="souvenir">Souvenir的经营之道：厨房小技巧50则</string>
+    <string name="license">考科目二之前的早饭怎么吃：全家</string>
+    <string name="lzysFamousDishesContent">
+        \t\t\t\t蓝莓山药泥是一道菜品，制作原料有山药、蓝莓酱等。具有健脾补肺、
+        益胃补肾、固肾益精、聪耳明目等功效。\n
+        \t\t\t\t材料：山药适量，蓝莓酱适量，草莓酱适量。\n
+        做法:\n
+        \t\t\t 1）山药洗净。\n
+        \t\t\t 2）切段，上锅蒸熟。\n
+        \t\t\t 3）蒸熟后的山药去皮。\n
+        \t\t\t 4）放入保鲜袋中用擀面杖压泥。\n
+        \t\t\t 5）再放入蓝莓酱用擀面杖擀匀。\n
+        \t\t\t 6）保鲜袋剪一小口，挤出蓝莓山药泥在盘中。\n
+        \t\t\t 7）上面用草莓酱点缀。\n
+    </string>
+    <string name="loveProducerContent" >
+        \t\t\t\t《恋与制作人》是芜湖叠纸网络科技有限公司在2017年12月20日发行的一款面向年轻女性用户的
+        超现实恋爱手游。\n
+        \t\t\t\t游戏基于抽卡养成的玩法，加入了约会、触摸、温馨小屋、在你身边等恋爱互动系统，以现代都市为舞台，
+        融入超现实主义元素，玩家以女主角的身份负责经营一家影视制作公司，历经各种离奇事件，邂逅四个不同
+        类型的男主角（华锐总裁李泽言、大学教授许墨、Evol特警白起、国际巨星周棋洛），并与他们培养感情。
+        世界观\n
+        \t\t\t\t玩家身为濒临破产的影视公司制作人，在恋语市想尽办法试图挽救公司的同时，
+        结识了四位身份各异的男性，以及卷入了一系列不可思议的超现实事件当中。
+    </string>
+    <string name="souvenirContent" >
+        \t\t\t\t华锐总裁，青年才俊，做事认真一丝不苟，对员工严厉，人称不苟言笑的k。
+        在金融圈就是一个传奇，八年前成立了华锐，现已走到了行业顶端，还是在财阀实力早就盘踞几代的
+        金融行业。轻度近视，在工作时偶尔会戴上眼镜。\n
+        \t\t\t\t两年前经营了一家属于自己的餐厅，名为Souvenir，被媒体称为“美食帝国的独裁暴君”，
+        餐厅运营十分任性，不定时开店，吃饭的账单随总裁心情而定。
+    </string>
+    <string name="psychoContent">
+        许墨的卡面台词（语录就不放了，怕酸死你们hhhhhhh)\n
+        \t\t\t\t我希望，你在这里的回忆都是美好的。\n
+        \t\t\t\t我不能把你置于危险之中。\n
+        \t\t\t\t你从来没有想过，危险可能来自于我吗？\n
+        \t\t\t\t如果你愿意的话，一辈子也可以。\n
+        \t\t\t\t结好的伤痂，即便撕开也不会再痛。\n
+        \t\t\t\t如果可以，我想要你的目光只为我停留。\n
+        \t\t\t\t你想看吗？我输掉的样子。\n
+        \t\t\t\t把你的不安，你的勇气，你的一切都交给我。\n
+        \t\t\t\t情不知所起，一往而深。\n
+        \t\t\t\t你许下的每个永远，我都不会缺席。\n
+        \t\t\t\t你在我心里掀起的涟漪，已经难以平息。\n
+        \t\t\t\t你不会拒绝我的，对吗？\n
+        \t\t\t\t如果你能听见，我没说出口的话。\n
+        \t\t\t\t你已经看到结局了，不是吗？\n
+        \t\t\t\t你映入的不止我的眼中，还有心上。\n
+        \t\t\t\t只有你，是我最好的解药。\n
+        \t\t\t\t你晴朗了，世界也晴朗了。\n
+        \t\t\t\t雨那么大，那就靠得近一些吧。\n
+        \t\t\t\t下一次的约会，只有我们两个人。\n
+        \t\t\t\t我知道了有个女孩在等我，就来了。\n
+        \t\t\t\t你想要放弃的时候，我会牵着你的手回家。\n
+        \t\t\t\t我眼里的你，是黑白世界里唯一的色彩。\n
+        \t\t\t\t我希望明年还能和你，看雪景过生日。\n
+        \t\t\t\t在我面前，就不要逞强了。\n
+        \t\t\t\t最重要的规则，因为你，我还是犯规了。\n
+        \t\t\t\t我很自私，只想和你分享所有的美好。\n
+        \t\t\t\t我想告诉你的，都在这歌声里。\n
+        \t\t\t\t我希望在你身上看到由我带来的，只属于我的好\n。
+        \t\t\t\t我想在梦中也陪在你身边。\n
+        \t\t\t\t这些话，我只对你一个人说。\n
+        \t\t\t\t你忘掉的那部分，我都一并记下来了。\n
+        \t\t\t\t你的眼泪，让我没有任何办法。\n
+        \t\t\t\t你可以要求我做任何事情，不需要对我迁就。\n
+        \t\t\t\t藏得再深的心意，我都听见了。\n
+        \t\t\t\t闭上眼睛，我会带你离开这里。\n
+        \t\t\t\t你之于我，已经是独一无二的礼物了。\n
+        \t\t\t\t有我在身边时可以放心闭上眼睛。
+    </string>
+    <string name="licenseContent">嵬漪马上就会过科目三的！</string>
+    <string name="temperature">8</string>
+    <string name="DegreeCentigrade">℃</string>
+    <string name="todayWeather">10℃ / 5℃</string>
+    <string name="pollution">轻度污染</string>
+    <string name="bodyTemperature">体感：8℃</string>
+    <string name="wind">西北风</string>
+    <string name="humidity">湿度：66%</string>
+    <string name="clothRecommend">穿衣推荐</string>
+    <string name="moreRecommend"><u>更多单品推荐</u></string>
+
+
+    <string name="setting_adult">成人模式</string>
+    <string name="setting_children">儿童模式</string>
+    <string name="setting_confirm">提交</string>
+    <string name="title_setting">设置</string>
+    <string name="title_outdoors">室外运动</string>
+    <string name="title_user_name">用户名</string>
+    <string name="title_user_password">密码</string>
+    <string name="title_confirm_password">确认密码</string>
+    <string name="title_sign_in">SIGN IN</string>
+    <string name="title_sign_up">SIGN UP</string>
+    <string name="user_name">Aresix</string>
+    <string name="password">zuiaxiaozhan</string>
+<!--儿童模式-->
+    <string name="title_children_activity">活动</string>
+    <string name="title_children_record">体形记录</string>
+<!--    饮食模式-->
+    <string name="children_food_card1">南瓜小米粥</string>
+    <string name="children_food_card1_content">\t\t南瓜和小米都是营养丰富的食材，南瓜有清
+        热解毒的功效，小米补中益气，两相结合价值更高。而且南瓜小米粥也不需要放什么调味料
+        ，南瓜本身带点甜味，宝宝也爱吃。\n
+　　 【适宜人群】\n
+　　 10个月以上的宝宝\n
+　　 【食材】\n
+　　 \t\t小米1碗，南瓜40克\n
+　　 \t\t【步骤】\n
+　　 \t\t1、将南瓜去皮去籽，切成小块。\n
+　　 \t\t2、将小米淘洗干净，放入清水中浸泡约1个小时。\n
+　　 \t\t3、取一口小锅，放入小米和适量的清水，煮成小米粥。\n
+　　 \t\t4、然后放入南瓜块，大火煮开之后，换成小火，直到将食材熬煮到软烂。\n
+　　 \t\t5、将煮好的南瓜小米粥盛入碗内即可。\n
+</string>
+    <string name="children_food_card2">青椒胡萝卜山药泥</string>
+    <string name="children_food_card2_content">\t\t食材：山药、胡萝卜、青椒、色拉油、食盐、香油。\n
+        \t\t做法：将胡萝卜和青椒洗干净切成末。在锅中倒点油，将它们炒至断生。等山药冷却后，压成泥。将压
+        好的山药泥倒入碗中，加入炒好的青椒胡萝卜，加入盐，将所有食物抓匀。准备好果冻模，在内壁涂上一层
+        香油，然后填入混合山药泥，用勺子压紧。再倒扣在盘中，即可开吃。\n
+</string>
+    <string name="children_food_card3">什锦小米粥</string>
+    <string name="children_food_card3_content">\t\t什锦粥可以添加很多食材，这道什锦小米粥里放
+        的是花生、玉米和胡萝卜。玉米和胡萝卜中含有大量的胡萝卜素，可以转化为宝宝身体发育所需要的
+        维生素A，而花生含钙量丰富，有助于促进宝宝骨骼发育，这三样东西放在一起营养互补。玉米粒和花
+        生不适合婴儿吞咽，妈妈们需要多注意，尽量将食材煮得软烂。\n
+　　 \t\t【适宜人群】\n
+　　 \t\t2岁以上的宝宝\n
+　　 \t\t【食材】\n
+　　 \t\t花生20颗、玉米1/3段、胡萝卜1/3根、大米1汤匙、小米2汤匙、水1600毫升\n
+　　 \t\t【步骤】\n
+　　 \t\t1、将花生、大米和小米分别放入碗中浸泡一个晚上。\n
+　　 \t\t2、胡萝卜削皮切丁，玉米取玉米粒。\n
+　　 \t\t3、将花生、玉米粒、胡萝卜丁和米放入锅中。\n
+　　 \t\t4、往锅中倒入适量的清水，将食材熬煮到软烂熟透即可。\n
+</string>
+<!--    居家模式-->
+    <string name="speaker">音响</string>
+    <string name="lighting">照明</string>
+    <string name="curtain">窗帘</string>
+    <string name="add_new_devices">添加设备</string>
+<!--    活动模式-室内-->
+    <string name="indoors_card1">美工</string>
+    <string name="indoors_card1_content">在做美工的时候，很多家长都会提供范例，
+        让孩子做一个一模一样的作品，而孩子往往对此并不感兴趣。这是因为，你准备的
+        材料规定了玩法，给孩子的发展空间很小，在某种程度上限制了孩子自由想象和发
+        挥。不如为孩子提供材料，让孩子自己创作！</string>
+    <string name="indoors_card2">角色扮演（过家家）</string>
+    <string name="indoors_card2_content">家长可以给宝宝提供一些娃娃、玩具锅碗
+        瓢盆等进行过家家游戏。当然，家长也把不要的小瓶子等物品给孩子玩过家家，这
+        样不仅经济实用，也让宝宝积累不同物品用法的经验。</string>
+    <string name="indoors_card3">积木</string>
+    <string name="indoors_card3_content">积木的种类多种多样。积木（清水积木、
+        乐高等）、积塑（雪花片）、橡皮泥、沙水等材料都可以让幼儿在创造的时候发展
+        空间知觉能力和象征能力。通过幼儿的构造操作，将无意义的结构原件转化为有形
+        象意义的整体，在这个过程中还可以看见幼儿搭建水平的发展变化。要注意，宝宝
+        想搭什么就搭什么，千万不要强行规定建构内容哦！</string>
+    <string name="indoors_card4">数学</string>
+    <string name="indoors_card4_content">家长可以常常让孩子数一数身边的人和物，
+        比如家里来了几个人，需要多少碗筷等，让幼儿建立基数的概念。此外，还可以和
+        幼儿聊天气和时间，让幼儿知道数字还可以是作为共享的衡量标准——参照数。在与
+        幼儿进行交流的时候，也可以让孩子将积木排列起来，一边排列一边说某某物品放
+        在第几个，从而建立序数的概念。</string>
+    <string name="indoors_card5">运动</string>
+    <string name="indoors_card5_content">下雨天或者天气不好的时候，可以在家里设
+        置一些小障碍物，让宝宝进行玩耍、运动，具有一定的挑战性也可以增加趣味性。</string>
+<!--    活动模式-室外-->
+    <string name="outdoors_card1">玩泥巴</string>
+    <string name="outdoors_card1_content">很多家长会认为，玩泥巴是很脏的行为，会
+        阻止孩子玩。但是，泥土是一种天然的创造元素，可以让幼儿充分发挥想象力，塑造出
+        各种艺术品。家长需要为幼儿做好防护，在保证安全和清洁的条件下，最大程度鼓励幼
+        儿探索自然</string>
+    <string name="outdoors_card2">跳袋子</string>
+    <string name="outdoors_card2_content">找个米袋之类的大袋子，清理干净后让宝宝
+        站进去，跳着走路，可以很好地发展宝宝的大肌肉哦</string>
+    <string name="outdoors_card3">跳圈圈</string>
+    <string name="outdoors_card3_content">这和跳房子类似，在蹦蹦跳跳的同时，发展身
+        体的平衡能力</string>
+<!--    体型记录模式-->
+    <string name="children_record_text1">身高体重参考表</string>
+    <string name="children_record_height_weight_reference">
+        \t\t 3~4岁身高和体重参考标准\n
+        \t\t\t\t 男孩：94.9-111.7cm 12.7-21.2kg\n
+        \t\t\t\t 女孩：94.1-111.3cm 12.3-21.5kg\n\n
+        \t\t 4~5岁身高和体重参考标准\n
+        \t\t\t\t 男孩：100.7-119.2cm 14.1-24.2kg\n
+        \t\t\t\t 女孩：99.9-118.9cm  13.7-24.9kg\n\n
+        \t\t 5~6岁身高和体重参考标准\n
+        \t\t\t\t 男孩：106.1-125.8cm 15.9-27.1kg\n
+        \t\t\t\t 女孩：104.9-125.4cm 15.3-27.8kg\n\n
+    </string>
+    <string name="children_record_text2">活动技能参考表</string>
+    <string name="children_record_activity_skill_reference">
+        \t\t 3~4岁活动技能参考\n
+        \t\t\t\t 1.能沿地面直线或在于较窄的低矮物体上走一段距离。\n
+        \t\t\t\t 2.能双脚灵活交替上下楼梯。\n
+        \t\t\t\t 3.能身体平稳地双脚连续向前跳。\n
+        \t\t\t\t 4.分散跑时能躲避他人的碰撞。\n
+        \t\t\t\t 5.能双手向上抛球。\n\n
+        \t\t 4~5岁活动技能参考\n
+        \t\t\t\t 1.能在较窄的低矮物体上平稳地走一段距离。\n
+        \t\t\t\t 2.能以匍匐、膝盖悬空等多种方式钻爬。\n
+        \t\t\t\t 3.能助跑跨跳过一定距离，或助跑跨跳过一定高度的物体。\n
+        \t\t\t\t 4.能与他人玩追逐、躲闪跑的游戏。\n
+        \t\t\t\t 5.能连续自抛自接球。\n\n
+        \t\t 5~6岁活动技能参考\n
+        \t\t\t\t 能在斜坡、荡桥和有一定间隔的物体上较平稳地行走。\n
+        \t\t\t\t 能以手脚并用的方式安全地爬攀登架、网等。\n
+        \t\t\t\t 能连续跳绳。\n
+        \t\t\t\t 能躲避他人滚过来的球或扔过来的沙包。\n
+        \t\t\t\t 能连续拍球。\n
+    </string>
+
 </resources>

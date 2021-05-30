@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.aresix.housingassistant2.R;
 
+/** 家居模式 **/
 public class ShelterFragment extends Fragment {
 
     private static final String TAG = "Ares";
